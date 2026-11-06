@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Commande de produits</title>
+</head>
+<body>
+    <form action="ex4.php" method="post" >
+        <fieldset style="width: 270px">
+            <p>Liste des vendeurs :</p>
+            <select id="vendeur" name="vendeur" size="4">
+                <option value="">-- Choisir un vendeur --</option>
+                <option value="M. Martin">Martin</option>
+                <option value="M. Dupont">Dupont</option>
+                <option value="M. Durand">Durand</option>
+                <option value="M. Louis">Louis</option>
+            </select>
+
+            <p style="margin-top: 40px">Liste des Produits :</p>
+            <select name="produit">
+                <option value="">-- Choisir un produit --</option>
+                <option value="Armoire">Armoire</option>
+            </select>
+
+            <p>Nombre de produits à commander :
+                <input type="number" id="nombre" name="nombre"  min="1">
+            </p>
+            <button type="submit">soumettre</button>
+        </fieldset>
+    </form>
+</body>
+</html>

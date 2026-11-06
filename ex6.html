@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Inscription</title>
+</head>
+<body>
+    <h2>Inscription</h2>
+    <form action="ex6.php" method="post">
+        <label>Nom : <input type="text" name="nom" required></label><br>
+        <label>Prénom : <input type="text" name="prenom" required></label><br>
+        <label>Mot de passe : <input type="password" name="motdepasse" required></label><br>
+        <label>Confirmez votre mot de passe : <input type="password" name="confirmation" required></label><br>
+        <label>Age : <input type="number" name="age" min="1" required></label><br>
+        Votre sexe :<br>
+        <label><input type="radio" name="sexe" value="HOMME" required> Homme</label><br>
+        <label><input type="radio" name="sexe" value="FEMME"> Femme</label><br>
+        <label>Langue :
+            <select name="langue">
+                <option>Français</option><option>Anglais</option><option>Arabe</option>
+            </select>
+        </label><br>
+        Loisirs :<br>
+        <label><input type="checkbox" name="loisirs[]" value="Cinéma"> Cinéma</label>
+        <label><input type="checkbox" name="loisirs[]" value="Musique"> Musique</label>
+        <label><input type="checkbox" name="loisirs[]" value="Sport"> Sport</label>
+        <label><input type="checkbox" name="loisirs[]" value="Voyages"> Voyages</label><br>
+        Couleurs préférées :<br>
+        <label><input type="checkbox" name="couleurs[]" value="Bleu"> Bleu</label>
+        <label><input type="checkbox" name="couleurs[]" value="Rouge"> Rouge</label>
+        <label><input type="checkbox" name="couleurs[]" value="Vert"> Vert</label>
+        <label><input type="checkbox" name="couleurs[]" value="Autres"> Autres</label><br>
+        <label>Commentaires :<br><textarea name="commentaires"></textarea></label><br>
+        <button type="reset">Annuler</button>
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>
